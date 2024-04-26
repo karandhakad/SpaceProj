@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+body
+{
+  background: #080C1F;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container
+{
+  padding: 20px 30px;
+  background-image: url("https://img.freepik.com/free-vector/flat-design-galaxy-background_23-2150864343.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container .navbar-box 
+{
+  width: 90%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+.container .navbar-box .logo
+{
+  font-size: 25px;
+  color: white;
+  font-family: monospace;
+}
+.container .navbar-box .menu
+{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.container .navbar-box .menu .menu-item
+{
+  list-style: none;
+  color: lightgray;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+.container .navbar-box .menu .menu-item:hover
+{
+  background: -webkit-linear-gradient(#595DE8, #29BDED);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.container .navbar-box .nav-btn
+{
+  border: none;
+  outline: none;
+  padding: 13px 25px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #595DE8, #29BDED);
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+.container .headline
+{
+  text-align: center;
+  font-size: 30px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container .btn-group
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  margin: 40px auto;
+}
+.container .btn-group button
+{
+  border: none;
+  outline: none;
+  padding: 8px 25px;
+  border-radius: 30px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .btn-group button img
+{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.container .btn-group .group-btn1
+{
+  background: #1C84FF;
+}
+.container .btn-group .group-btn2
+{
+  background: #F8C51D;
+}
+.container .btn-group .group-btn3
+{
+  background: #0CFA4B;
+}
+.container .btn-group .group-btn4
+{
+  background: linear-gradient(to right, #595DE8, #29BDED);
+  padding: 13px 35px;
+}
+.cards
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 30px;
+  max-width: 90%;
+  margin: auto;
+}
+.cards .card
+{
+  padding: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 20%;
+  background: linear-gradient(to right, #595DE8, #29BDED);
+  text-align: center;
+  margin: 20px 0;
+}
+.cards img
+{
+  height: 150px;
+  width: 100%;
+  border-radius: 10px;
+}
+.cards h4
+{
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.cards .card-btn
+{
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  background: #fff;
+  padding: 5px;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom-btns
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  max-width: 90%;
+  margin: auto;
+}
+.bottom-btns .bottom-btn
+{
+  background: -webkit-linear-gradient(#595DE8, #29BDED);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
